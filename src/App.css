@@ -36,3 +36,22 @@
     transform: rotate(360deg);
   }
 }
+
+
+.iconButton {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 0;
+  background-color: transparent;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  text-align: center;
+}
+
+.iconButton:hover{
+  background-color: #f0f2f1;
+}
