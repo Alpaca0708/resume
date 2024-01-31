@@ -39,8 +39,8 @@
 
 
 .iconButton {
-  width: 25px;
-  height: 25px;
+  width: 24px;
+  height: 100%;
   border-radius: 50%;
   border: 0;
   background-color: transparent;
@@ -54,4 +54,15 @@
 
 .iconButton:hover{
   background-color: #f0f2f1;
+}
+
+.liItems {
+  border-radius: 5px;
+  border: 2px solid #555555;
+  font-family: Courier New,Courier,monospace;
+  padding: 3px;
+  width:auto;
+  /* font-weight:bold; */
+  /* font-size: 16px; */
+  
 }
