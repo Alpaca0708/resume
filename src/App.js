@@ -17,6 +17,8 @@ import css from'./css3.svg';
 import HTML from'./html5.svg';
 import node from'./node.svg';
 import figma from'./figma.svg';
+import firebase from './firebase.svg';
+import nextJS from './next.svg'
 
 
 function App() {
@@ -144,8 +146,8 @@ function App() {
                   }}>
                         <div style={{
                           width:'100%',
-                          padding:'3%',
-                          fontWeight: 'bold'
+                          padding:'0 60px ',
+                          fontWeight: 700
                         }} >
                           <h2 style={{ 
                             // borderBottom: '1px solid black',
@@ -170,7 +172,7 @@ function App() {
                         </div>
                         <div style={{
                           width:'100%',
-                          padding:'3%'
+                          padding:'0 60px'
                         }} >
                           <h2 style={{ 
                             // borderBottom: '1px solid black',
@@ -193,7 +195,7 @@ function App() {
                   }}>
                     <div style={{
                           width:'40%',
-                          padding:'3%',
+                          padding:'0 60px',
                           
                         }} >
                           <h2 ><span style ={{backgroundColor:'#EBECCB'}}>Education</span></h2>
@@ -211,17 +213,15 @@ function App() {
                     justifyContent:'flex-start',
                     width:'100%'
                   }}>
-                    <div style={{
-                          width:'40%',
-                          paddingRight:'3%',
-                          paddingLeft:'3%'
-                          
-                        }} >
-                      <h2>
-                        <span style ={{backgroundColor:'#EBECCB'}}>Experiences</span>
-                      </h2>         
-                    </div>    
-                  </div>
+                      <div style={{
+                            width:'40%',
+                            padding:'0 60px'                         
+                          }} >
+                          <h2>
+                            <span style ={{backgroundColor:'#EBECCB'}}>Experiences</span>
+                          </h2>         
+                      </div>    
+                  </div>                                
 
 
                   <div style={{
@@ -230,11 +230,10 @@ function App() {
                     alignItems:'center',
                     width:'100%',
                     flexDirection:'column',
-                    // marginBottom:'60px'
-                    // padding:'10px 70px 10px 70px'
+                    padding:'0 60px'                   
                   }}>
                     <div style={{display:'flex',width:'90%',justifyContent:'space-around'}} > 
-                      <div style={{width:'40%',fontWeight:700}}>
+                      <div style={{width:'40%',fontWeight:700, }}>
                         {/* <h2>experiences</h2> */}
                         <p style={{color:'#888'}}>Feb. 2023 - Sep. 2023</p>
                         <p style={{fontSize:'18px'}}>Consignment Associate</p>
@@ -250,15 +249,16 @@ function App() {
                         </ul>                       
                       </div>
                   </div>
-                  <div style={{
+                  <hr style={{
                     display:'flex',
-                    borderBottom: '1px solid black', 
-                    width:'100%',
+                    borderBottom: '1px solid #dfe9e4', 
+                    width:'80%',
                     flexDirection:'column',
                     alignItems:'center',
-                    marginBottom:'30px'
-                  }}></div>
-                    <div style={{display:'flex',width:'90%',justifyContent:'space-around'}} > 
+                    marginBottom:'30px',
+                    marginTop:'30px'
+                  }}></hr>
+                    <div style={{display:'flex',width:'90%',justifyContent:'space-around', padding:'10px'}} > 
                         <div style={{width:'40%',fontWeight:700}} >
                           <p style={{color:'#888'}}>Sep. 2020 - Dec 2022</p>
                           <p style={{fontSize:'18px'}}>Admin Associate</p>
@@ -266,7 +266,7 @@ function App() {
   
                         </div>
                         
-                        <div style={{width:'60%'}}>
+                        <div style={{width:'60%', }}>
                           <ul>
                             <li>Associate internal department meeting arrange</li>
                             <li>Assist domestic marketing event or oversea medical conference attendance</li>
@@ -277,7 +277,8 @@ function App() {
                     </div>
                   </div>
 
-                  <div style={{borderBottom: '1px solid gray', borderStyle:'double', width:'100%',marginTop:'60px'}}></div>
+                  <hr style={{borderTop: '1px solid #dfe9e4', height:'3px',  width:'80%',margin:'50px 0'}}>                    
+                  </hr>
 {/* portfolio */}
                   <div style={{
                     display:'flex',
@@ -285,8 +286,8 @@ function App() {
                     width:'100%'
                   }}>
                         <div style={{
-                              width:'40%',
-                              padding:'3%',                             
+                              width:'100%',
+                              padding:'0 50px',                             
                             }} >
                             <h2>
                               <span style ={{fontWeight:'bold', 
@@ -294,7 +295,8 @@ function App() {
                                             fontFamily:'Roboto, Noto Sans TC, Noto Sans SC, Noto Sans HK, Noto Sans JP, Noto Sans, PingFang TC, Microsoft JhengHei, PMingLiU, sans-serif'}}>
                                             Portfolio
                               </span>
-                            </h2>           
+                            </h2> 
+                            <hr style={{border: '1px solid #dfe9e4',  width:'90%'}} ></hr>          
                         </div>
     
                   </div>
@@ -305,12 +307,13 @@ function App() {
                         <h3>MBTI Match Web</h3>
                         <p style={{paddingRight:'60px'}}>Input your MBTI and others to know how match you are in friend, family and lover.</p>
                         <div style={{display:'flex', justifyContent:'flex-start', alignItems:'flex-end'}}>
-                          <img src={reactIcon} alt='react' style={{marginRight:'5px'}}></img>
-                          <img src={jsIcon} alt='js' style={{marginRight:'5px'}}></img>
-                          <img src={css} alt='css'style={{marginRight:'5px'}}></img>
-                          <img src={HTML} alt='html' style={{marginRight:'5px'}}></img>
-                          <img src={node} alt='node' style={{marginRight:'5px'}}></img>
-                          <img src={figma} alt='figma' style={{marginRight:'5px'}}></img>
+                          <img src={reactIcon} alt='react' style={{marginRight:'6px'}}></img>
+                          <img src={nextJS} alt='next' style={{marginRight:'6px'}}></img>
+                          <img src={jsIcon} alt='js' style={{marginRight:'6px'}}></img>
+                          <img src={css} alt='css'style={{marginRight:'6px'}}></img>
+                          <img src={HTML} alt='html' style={{marginRight:'6px'}}></img>
+                          <img src={node} alt='node' style={{marginRight:'6px'}}></img>
+                          <img src={figma} alt='figma' style={{marginRight:'6px'}}></img>
 
                           </div>                
 
@@ -324,12 +327,15 @@ function App() {
                           <p>Provide a chat room to discuss any topics.
                           </p> 
                           <div style={{display:'flex', justifyContent:'flex-start', alignItems:'flex-end'}}>
-                          <img src={reactIcon} alt='react' style={{marginRight:'5px'}}></img>
-                          <img src={jsIcon} alt='js' style={{marginRight:'5px'}}></img>
-                          <img src={css} alt='css'style={{marginRight:'5px'}}></img>
-                          <img src={HTML} alt='html' style={{marginRight:'5px'}}></img>
-                          <img src={node} alt='node' style={{marginRight:'5px'}}></img>
-                          <img src={figma} alt='figma' style={{marginRight:'5px'}}></img>
+                          <img src={reactIcon} alt='react' style={{marginRight:'6px'}}></img>
+                          <img src={nextJS} alt='next' style={{marginRight:'6px'}}></img>
+                          <img src={firebase} alt='firebase' style={{marginRight:'6px'}}></img>
+                          <img src={jsIcon} alt='js' style={{marginRight:'6px'}}></img>
+                          <img src={css} alt='css'style={{marginRight:'6px'}}></img>
+                          <img src={HTML} alt='html' style={{marginRight:'6px'}}></img>
+                          <img src={node} alt='node' style={{marginRight:'6px'}}></img>
+                          
+                          
 
                           </div>                
 
