@@ -23,8 +23,15 @@ function App() {
                     <div className='containerBlue'>
                         {/* 頭像+個人聯絡資料區(email+phone) */}
                         <div style={{minWidth:'340px' }}>
-                            <div style={{width:'119px', height:'119px', borderRadius:'50%', overflow:'hidden',}}>
-                                <img src ={ellie} alt= "ellie" ></img>
+                            <div style={{width:'119px', height:'119px', borderRadius:'50%', overflow:'hidden',position: 'relative'}}>
+                                <img src ={ellie} alt= "ellie" style={{
+                                                                width:'100%',
+                                                                height:'100%',
+                                                                objectFit: 'contain',                                                                
+                                                                position:'absolute',
+                                                                transform: 'scale(1.4)',                                                
+                                                                top: '20px',
+                                                                }}></img>
                             </div>
                             <h1>
                                 Ellie Lai
