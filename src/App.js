@@ -5,6 +5,7 @@ import ellie from './ellie.png';
 import './App.css';
 import portfolio1 from'./portfolio1.png';
 import portfolio2 from'./portfolio2.png';
+import graduation from './graduation.svg';
 
 
 
@@ -15,13 +16,13 @@ function App() {
   
       return (
         <div >
-            <div style={{backgroundColor:'#f8f8f8'}}>
+            <div style={{backgroundColor:'#f8f8f8',}}>
                 {/* 不同於背景色, 整頁A4履歷頁 */}
                 <div style={{display:'flex', flexDirection:'column', alignItems:'center', }} >                   
                     {/* 藍綠色的個人資料區 */}
                     <div className='containerBlue'>
                         {/* 頭像+個人聯絡資料區(email+phone) */}
-                        <div style={{minWidth:'300px' }}>
+                        <div style={{minWidth:'340px' }}>
                             <div style={{width:'119px', height:'119px', borderRadius:'50%', overflow:'hidden',}}>
                                 <img src ={ellie} alt= "ellie" ></img>
                             </div>
@@ -55,30 +56,36 @@ function App() {
                     {/* Skill+Language區 */}
                     <div className='containerL'>
                         {/* skill */}
-                        <div style={{width:'100%'}}>
+                        <div >
                             <h2>
-                                Skill
+                                <span style ={{backgroundColor:'#EBECCB'}}>Skill
+                                </span>
                             </h2>
                             <hr style={{borderColor:'#333333'}}/>
-                            <ul>
+                            <ul style={{lineHeight:2, }}>
                                 <li>
-                                    程式語言: JavaScript CSS HTML
+                                    程式語言: <span className='liItems'>JavaScript</span>
+                                          <span className='liItems'>CSS</span>
+                                          <span className='liItems'>HTML</span>
                                 </li>
                                 <li>
-                                    框架工具: Next.js react.js Node.js
+                                    框架工具: <span className='liItems'>Node.js</span>
+                                          <span className='liItems'>Next.js</span>
+                                          <span className='liItems'>react.js</span>
                                 </li>
                                 <li>
-                                    Devops: github Vercel
+                                    Devops: <span className='liItems'>github</span>
+                                          <span className='liItems'>Vercel</span>
                                 </li>
                             </ul>
                         </div>
                         
                         {/* Language */}
-                        <div style={{width:'100%'}}>
+                        <div style={{width:'40%'}}>
                             <h2>
-                                Language
+                                <span style ={{backgroundColor:'#EBECCB'}}>Language</span>
                             </h2>                        
-                            <hr style={{borderColor:'#333333'}}/>
+                            <hr style={{minWidth:'320px', borderColor:'#333333'}}/>
                             <ul>
                                 <li>
                                     Chinese
@@ -94,13 +101,17 @@ function App() {
                     <div className='containerEdu' >
                         <div>
                             <h2>
-                                Education
+                                <span style ={{backgroundColor:'#EBECCB'}}>Education
+                                </span>
                             </h2>
-                            <h3>
-                                Bachelor, Shih Hsin University
-                            </h3>
-                            <hr style={{borderColor:'#dfe9e4', width:'100%'}}/>
-                            <p>
+                            <div style={{display:'flex',  }}>
+                                <img src={graduation} alt='graduation' style={{marginRight:'10px'}}></img>
+                                <h3 style={{fontSize:'20px', color:'#55553F'}}>
+                                    Bachelor, Shih Hsin University
+                                </h3>
+                            </div>
+                            <hr style={{borderTop:'2px solid #eee', width:'100%'}}/>
+                            <p style={{fontWeight:'bold', fontSize:'20px', color:'rgb(154, 176, 167)', fontWeight:700}}>
                                 Tourism
                             </p>
                         </div>
@@ -108,8 +119,10 @@ function App() {
                     {/* Experience */}
                     <div  className='containerExpHeader'>
                         <h2>
-                            Experience
+                            <span style ={{backgroundColor:'#EBECCB'}}>Experiences
+                            </span>
                         </h2>
+                    
                         {/* 第一份公司職位年資 */}
                         <div className='containerExp'>
                             <div style={{minWidth:'390px', }} >
@@ -141,7 +154,7 @@ function App() {
                                 </ul>
                             </div>
                         </div>
-                        <hr style={{borderColor:'#dfe9e4'}}/>
+                        <hr style={{borderColor:'#eee', borderTop:'1px solid #eee'}}/>
                         {/* 第二份工作經驗 */}
                         <div className='containerExp'>
                             <div style={{minWidth:'390px', }}>
@@ -173,17 +186,26 @@ function App() {
                                 </ul>
                             </div>
                         </div>
-                        <hr style={{borderColor:'#dfe9e4'}}/>                    
+                        <hr style={{borderBottom:'2px solid #eee', borderTop:'2px solid #eee', borderColor:'#eee', borderStyle:'double', height:'5px', borderTopWidth:'3px', }}/> 
+                        {/* <hr style={{borderColor:'#dfe9e4'}}/>                    */}
                     </div>
                     {/* Portfolio */}
                     <div className='containerExpHeader'>
                         <h2>
-                            Portfolio
+                            <span style ={{fontWeight:'bold', 
+                                            color:'#647b71',
+                                            fontFamily:'Roboto, Noto Sans TC, Noto Sans SC, Noto Sans HK, Noto Sans JP, Noto Sans, PingFang TC, Microsoft JhengHei, PMingLiU, sans-serif'}}>
+                                            Portfolio
+                              </span>
                         </h2>
+                        
+                        <hr style={{borderColor:'#eee',borderTop:'1px solid #eee',  }}/>
+                        
+                    </div>
                         {/* 第一個作品集 */}  
                         <div className='containerProf'>                      
-                            <div >                               
-                                <img src={portfolio1} alt='portfolio1' style={{width:'100%', height:'auto'}}>                         
+                            <div style={{maxWidth:'340px', }}>                               
+                                <img src={portfolio1} alt='portfolio1' style={{width:'310px', height:'auto'}}>                         
                                 </img> 
                                 <h3>
                                     MBTI Match Web
@@ -193,8 +215,8 @@ function App() {
                                 </p>
                             </div>
                             {/* 第二個作品集 */}
-                            <div >                               
-                                <img src={portfolio2} alt='portfolio2' style={{width:'100%',  height:'auto'}}>                         
+                            <div style={{maxWidth:'340px', }} >                               
+                                <img src={portfolio2} alt='portfolio2' style={{width:'310px',  height:'auto'}}>                         
                                 </img>
                                 <h3>
                                     Debate chat room (on building)
@@ -204,7 +226,7 @@ function App() {
                                 </p>
                             </div>
                         </div>
-                    </div>
+                    
                 </div>
             </div>           
         </div>
