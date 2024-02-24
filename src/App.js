@@ -145,7 +145,7 @@ function App() {
                             </div>
                             {/* 工作內容 */}
                             <div style={{width:'100%'}}>
-                                <ul style={{flexWrap:'wrap',fontStyle:'normal', color:'rgb(85, 85, 85)', fontWeight:400, lineHeight:1.5, fontSize:'16.7px',color:'#555555',  fontFamily:'Roboto,Noto Sans TC,Noto Sans SC,Noto Sans KR,Noto Sans JP,Noto Sans,PingFang TC,Microsoft JhengHei,PMingLiU,sans-serif'}}>
+                                <ul style={{ fontStyle:'normal', color:'rgb(85, 85, 85)', lineHeight:1.5, fontSize:'16.7px',color:'#555555',  fontFamily:'Roboto,Noto Sans TC,Noto Sans SC,Noto Sans KR,Noto Sans JP,Noto Sans,PingFang TC,Microsoft JhengHei,PMingLiU,sans-serif'}}>
                                     <li>
                                         Management and analysis consignment inventory
                                     </li>
@@ -177,7 +177,7 @@ function App() {
                             </div>
                             {/* 工作內容 */}
                             <div style={{width:'100%'}}>
-                                <ul style={{flexWrap:'wrap',fontWeight:540, lineHeight:1.5, fontSize:'16.7px',color:'#555555',  fontFamily:'Roboto,Noto Sans TC,Noto Sans SC,Noto Sans KR,Noto Sans JP,Noto Sans,PingFang TC,Microsoft JhengHei,PMingLiU,sans-serif'}}>
+                                <ul style={{lineHeight:1.5, fontSize:'16.7px',color:'#555555',  fontFamily:'Roboto,Noto Sans TC,Noto Sans SC,Noto Sans KR,Noto Sans JP,Noto Sans,PingFang TC,Microsoft JhengHei,PMingLiU,sans-serif'}}>
                                     <li>
                                         Associate internal department meeting arrange
                                     </li>
