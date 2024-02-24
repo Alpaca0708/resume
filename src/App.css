@@ -40,7 +40,7 @@
 
 .iconButton {
   width: 24px;
-  height: 100%;
+  height: 24px;
   border-radius: 50%;
   border: 0;
   background-color: transparent;
@@ -67,4 +67,92 @@
   /* font-weight:bold; */
   /* font-size: 16px; */
   
+}
+
+
+.container {
+  display: flex;
+  width:970px;
+  padding:30px;
+  flex-grow: 1;  
+}
+
+.containerBlue{
+  width:80%;
+  color:#fff; 
+  background-color:#378AAD;
+  font-family:Roboto,Noto Sans TC,Noto Sans SC,Noto Sans KR,Noto Sans JP,Noto Sans,PingFang TC,Microsoft JhengHei,PMingLiU,sans-serif;
+  padding:30px;
+}
+
+.containerL{
+  width:80%;
+  color:black; 
+  background-color:white;  
+  padding:30px;
+}
+
+.containerEdu{
+  width:80%;
+  background-color:white;  
+  padding:30px;
+}
+
+.containerExp{
+  width:80%;
+  color:black; 
+  background-color:white;   
+}
+.containerExpHeader{
+  width:80%;
+  background-color:white; 
+  padding:30px;
+}
+.containerProf{
+  /* width:390px; */
+  width:80%;
+  background-color:white;  
+  padding:30px;
+}
+
+
+@media screen and (min-width: 600px) {
+  .container {
+    flex-direction: column;
+    width:390px;
+  }
+  .containerBlue{
+    display: flex;
+    width:60%;
+    padding:30px;
+    justify-content: space-around;
+    
+  }
+  .containerL{
+    display: flex;
+    justify-content: space-around;
+    width:60%;
+  }
+  .containerExp{
+    display: flex;
+    width:100%;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+  }
+  .containerExpHeader{
+    width:60%;
+  }
+  .containerEdu{
+    width:60%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+  }
+  .containerProf{
+    /* width:60%; */
+    display: flex;
+    justify-content:space-around; 
+    padding: 20px; 
+  }
 }
