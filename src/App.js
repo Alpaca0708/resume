@@ -36,13 +36,13 @@ function App() {
                             <h1>
                                 Ellie Lai
                             </h1>
-                            <h4>
+                            <h4 style={{color:'#dfe9e4'}}>
                                 Front end engineer
                             </h4>
                             <p>
                                 Taipei City, Taiwan
                             </p>
-                            <p>
+                            <p style={{fontFamily:'sans-serif', color:'#dfe9e4', textDecoration:'underline',fontWeight:700}}>
                                 camera20120109@gmail.com
                             </p>
                             
@@ -93,7 +93,7 @@ function App() {
                                 <span style ={{backgroundColor:'#EBECCB'}}>Language</span>
                             </h2>                        
                             <hr style={{minWidth:'320px', borderColor:'#333333'}}/>
-                            <ul>
+                            <ul style={{fontWeight:700, color:'#555555', fontSize:'16px'}}>
                                 <li>
                                     Chinese
                                 </li>
@@ -132,14 +132,14 @@ function App() {
                     
                         {/* 第一份公司職位年資 */}
                         <div className='containerExp'>
-                            <div style={{minWidth:'390px', }} >
-                                <p>
+                            <div style={{minWidth:'390px',lineHeight:1}} >
+                                <p style={{color:'#888', fontSize:'16px'}}>
                                     Feb. 2023 - Sep. 2023
                                 </p>
                                 <h3>
                                     Consignment Associate
                                 </h3>
-                                <h4>
+                                <h4 style={{color:'#647b71'}}>
                                     Alcon Services AG, Taiwan Branch  
                                 </h4>                      
                             </div>
@@ -164,14 +164,14 @@ function App() {
                         <hr style={{borderColor:'#eee', borderTop:'1px solid #eee'}}/>
                         {/* 第二份工作經驗 */}
                         <div className='containerExp'>
-                            <div style={{minWidth:'390px', }}>
-                                <p>
+                            <div style={{minWidth:'390px', lineHeight:1 }}>
+                                <p style={{color:'#888', fontSize:'16px'}}>
                                     Sep. 2020 - Dec 2022
                                 </p>
                                 <h3>
                                     Admin Associate
                                 </h3>
-                                <h4>
+                                <h4 style={{color:'#647b71'}}>
                                     MSD Taiwan Branch   
                                 </h4>                      
                             </div>
